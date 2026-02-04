@@ -230,7 +230,6 @@ def load_huggingface_dataset(
         ds_split = ds_split.map(
             processor.process_batch,
             batched=True,
-            remove_columns=['text_to_phonetise']
         )
         processed_datasets[split_name] = ds_split
 
@@ -278,7 +277,6 @@ def load_csv_dataset(
     data = data.map(
         processor.process_batch,
         batched=True,
-        remove_columns=['text_to_phonetise']
     )
 
     return data
@@ -317,7 +315,6 @@ def load_text_dataset(
     data = data.map(
         processor.process_batch,
         batched=True,
-        remove_columns=['text_to_phonetise']
     )
 
     return data
@@ -334,11 +331,10 @@ def save_to_csv(data, output_path: str):
     if isinstance(data, DatasetDict):
         # Combine all splits
         combined_df = pd.concat([ds.to_pandas() for ds in data.values()])
-        combined_df = combined_df[['ID', 'phoneme_sequence']]
         combined_df.to_csv(output_path, index=False)
         print(f"Combined results from all splits saved to '{output_path}'")
     else:
-        output_df = data.to_pandas()[['ID', 'phoneme_sequence']]
+        output_df = data.to_pandas()
         output_df.to_csv(output_path, index=False)
         print(f"Results saved to '{output_path}'")
 
