@@ -1,72 +1,72 @@
 ID,text_to_phonetise,phoneme_sequence
-line_1,اِذَا مُمْكِن، أَنَا بَفَضِّل مَا تِخْلَع السِّنّ.,aa i z aa m u m k i n ' a n aa b a f a D II l ma t i x l A E aa l s ii nn
-line_2,رَاح أَرَاهِن بِتَلَاتِة دُولَار عَلَى هَاد.,r aa H ' a r aa h i n b i t a l aa t i d u w l aa r E a l aa h aa d
-line_3,أَنَا عَم بِتْخَرْبِط. بِتْمَانِع تِرْسُمْلِي خَرِيطَة؟,' a n aa E a m b i t x A r b i T b i t m aa n i E t i r s u m l i y x A r I y T A
-line_4,الْقَهْوِة مِش مَشْمُولِة؟,aa l ' A h uu i m i $ m a $ m u w l i
-line_5,بِدِّي أَمَدِّد قَعْدِتِي هُون لَكَمَان يُومَيْن.,b di ' a m a d ii d ' A E d i t i y h u w n l a k a m aa n ii u w m a ii n
-line_6,لِسَّا حَاسِس حَالِي بِدِّي أَسْتَفْرِغ.,l i s aa H aa s i s H aa l i y b di ' a s t a f r i g
-line_7,أَنَا فَاتِح الأَرْبْعَا الصُّبح أَو الجُمْعَة بَعِد الظُّهُر.,' a n aa f aa t i H aa l ' a r b E aa aa l S UU b H ' a w aa l j u m E a b a E i d aa l z UU h u r
-line_8,أَنَا بَحْكِي مَعَك مِن كِشْك عَامّ فِي مِيسِي.,' a n aa b a H k i y m a E a k min k i $ k E aa mm fi m i y s i y
-line_9,هَاي الغُرْفِة رَقم اتْنَيْن صِفِر وَاحَد. بِدِّي أَطْلُب فْطُور بُكْرَا.,hay aa l g U r f i r a ' m aa t n a ii n S I f i r uu aa H a d b di ' a T l U b f T U w r b u k r aa
+line_1,اِذَا مُمْكِن، أَنَا بَفَضِّل مَا تِخْلَع السِّنّ.,' i z aa m u m k i n ' a n aa b a f a DD l m aa t i x l A E i ss nn
+line_2,رَاح أَرَاهِن بِتَلَاتِة دُولَار عَلَى هَاد.,r aa H ' a r aa h i n b i t a l aa t i t d u w l aa r E a l aa h aa d
+line_3,أَنَا عَم بِتْخَرْبِط. بِتْمَانِع تِرْسُمْلِي خَرِيطَة؟,' a n aa E a m b i t x A r b i T b i t m aa n i E t i r s u m l i y x A r I y T A t
+line_4,الْقَهْوِة مِش مَشْمُولِة؟,i l ' A h w i t m i $ m a $ m u w l i t
+line_5,بِدِّي أَمَدِّد قَعْدِتِي هُون لَكَمَان يُومَيْن.,b i dd i ' a m a dd d ' A E d i t i y h u w n l a k a m aa n y u w m a y n
+line_6,لِسَّا حَاسِس حَالِي بِدِّي أَسْتَفْرِغ.,l i ss aa H aa s i s H i l i y b i dd i ' a s t a f r i g
+line_7,أَنَا فَاتِح الأَرْبْعَا الصُّبح أَو الجُمْعَة بَعِد الظُّهُر.,' a n aa f aa t i H i l ' a r b E aa i SS bb H ' a w i l j u m E a t b a E i d i zz hh u r
+line_8,أَنَا بَحْكِي مَعَك مِن كِشْك عَامّ فِي مِيسِي.,' a n aa b a H k i y m a E a k m i n k i $ k E aa mm f i y m i y s i y
+line_9,هَاي الغُرْفِة رَقم اتْنَيْن صِفِر وَاحَد. بِدِّي أَطْلُب فْطُور بُكْرَا.,h ay i l g U r f i t r a ' m aa t n a y n S I f i r w aa H a d b i dd i ' a T l U b f T U w r b u k r aa
 line_10,أَنَا عَطْشَان.,' a n aa E a T $ aa n
-line_11,متَى بِتِسْكِّر؟,m t aa b i t i s k ii r
-line_12,لَو سَمَحْت وَرَجِّينِي جَوَاز سَفَرَك.,l a w s a m a H t uu a r a j ii y n i y j a uu aa z s a f a r a k
+line_11,متَى بِتِسْكِّر؟,m t aa b i t i s kk r
+line_12,لَو سَمَحْت وَرَجِّينِي جَوَاز سَفَرَك.,l a w s a m a H t w a r a jj y n i y j a w aa z s a f a r a k
 line_13,أَنَا لَازِم أَرُوح. رَاح أَحْكِي مَعَك بَعْدِين.,' a n aa l aa z i m ' a r u w H r aa H ' a H k i y m a E a k b a E d i y n
-line_14,شُو إِسْم الشَّخْص اللِّي بِتْحِبّ تِحْكِي مَعُه؟,$u ' i s m aa l $ aa x S 'al li b i t H i bb t i H k i y m a E u h
-line_15,مُمْكِن تِحْكِيه مَرِّة تَانْيِة؟,m u m k i n t i H k i y h m a r ii t aa n ii i
-line_16,شُو نَوْع الخُبِز اللِّي عِنْدَك؟,$u n a uu E aa l x U b i z 'al li E i n d a k
-line_17,أَنَا بَشْتَغِل بِشِرْكِة تِجَارِيِّة.,' a n aa b a $ t a g I l b i $ i r k i t i j aa r ii
-line_18,مُمْكِن تِيجِي هُون بْأَسْرَع وَقِت، لَو سَمَحْت؟,m u m k i n t i y j i y h u w n b ' a s r a E uu a ' I t l a w s a m a H t
-line_19,أَنَا حَسَّبْتْهُم حَوَالَِي مِيِّة وْخَمْسِين رِطِل.,' a n aa H a s aa b t h u m H a uu aa l a i y m ii uu x A m s i y n r i T I l
-line_20,أَنَا لِسَّا مَا قَرَّرِت لَهَلَّأ. مُمْكِن تِعْطِينِي شْوَيِّة وَقِت أَكْتَر؟,' a n aa l i s aa ma ' A r AA r I t l a h a l aa ' m u m k i n t i E T I y n i y $ uu a ii uu a ' I t ' a k t a r
-line_21,بِدِّي اِسْتَأْجِر سَيَّارَة أُوتُومَاتِيك لَيُومَيْن.,b di aa i s t a ' j i r s a ii aa r a ' u w t u w m aa t i y k l a ii u w m a ii n
-line_22,لَو سَمَحْت. بِدِّي أَحُطّ طَلَبِيِّة.,l a w s a m a H t b di ' a H u TT T A l A b ii
-line_23,هَاد بَسّ دَلِيْل عَلَى تَقْدِيْرِي.,h aa d bas d a l ii l E a l aa t a ' d ii r i y
-line_24,لَمَّا تُوْصَل هُنَاك، اِسْأَل حَدّ تَانِي، لَو سَمَحْت.,l a m aa t uu S A l h u n aa k aa i s ' a l H a dd t aa n i y l a w s a m a H t
-line_25,هَاد مِش طَلَب حَدَا تَانِي غَيْرِي؟,h aa d m i $ T A l A b H a d aa t aa n i y g A II r I y
-line_26,رَاح نْضَل نِحْكِي هِيك وَيْن مَا نْرُوح؟,r aa H n D A l n i H k i y h i y k wein ma n r u w H
-line_27,مِيْن صَاحْبَك المُفَضَّل؟,m ii n S aa H b a k aa l m u f a D AA l
-line_28,مُمْكِن تْفَرْجِينِي الْحَلْقَة التَّانْيِة مِن الْيَسَار؟,m u m k i n t f a r j i y n i y aa l H a l ' A aa l t aa n ii i min aa l ii a s aa r
-line_29,وَبَعْدِين رَاح نَاخْدُه.,uu a b a E d i y n r aa H n aa x d u h
-line_30,مِش فَاهْمِة شَرْحِك.,m i $ f aa h m i $ a r H i k
-line_31,قَدِّيْش مَرْتَك طَبَّاخَة رَائِعَة.,' A d ii $ m a r t a k T A b aa x A r aa ' i E a
-line_32,مُمْكِن تِْعِيرْنِي القِطْعَة اللِّي بْتْرْفَع الحَبْل، لَو سَمَحْت؟,m u m k i n t i E i y r n i y aa l ' I T E a 'al li b t r f a E aa l H a b l l a w s a m a H t
-line_33,رَاح عَلَى المَوْقِف.,r aa H E a l aa aa l m a uu ' I f
-line_34,مِش مَرْغُوب بِنِسْبِة كْبِيرَة.,m i $ m a r g U w b b i n i s b i k b i y r a
-line_35,اُه، يَالا. دُولَارَيْن بَسّ.,aa u h ii aa l aa d u w l aa r a ii n bas
-line_36,فِي حَدّ اقْتَحَم غُرْفِتِي اللَّيْلِة المَاضْيِة.,fi H a dd aa ' t a H a m g U r f i t i y aa l l aa ii l i aa l m aa D II I
-line_37,شِيكَّات سِيَاحِيِّة. شُكْراً إِلَك. هِيّ تَذْكَرْتَك وبِطَاقَة الصُّعُوْد تَبَعَك. كُون هُنَاك، لَو سَمَحْت، قَبِل بِسَاعَة وَحْدِة مِن رِحْلِة الطَّيَرَان.,$ i y k aa t s ii aa H ii $ u k r a n ' i l a k h ii y t a z k a r t a k w b i T aa ' A aa l S UU E uu d t a b a E a k k u w n h u n aa k l a w s a m a H t ' A b i l b i s aa E a uu a H d i min r i H l i aa l T AA II A r aa n
-line_38,عِنْدِي دَوَا إِلِي.,E i n d i y d a uu aa ' i l i y
-line_39,لَازِم يْكُون هَادِي.,l aa z i m ii k u w n 'a di
-line_40,لَا، هِيِّ بْتِتْضَمَّن الضَّرِيبِة وقِيمِة الخِدْمِة.,la h ii b t i t D A m aa n aa l D AA r I y b i w ' I y m i aa l x I d m i
-line_41,رَاح يْكُون فِي عَشِر دَقَايِق إِنْتِظَار أَو إِشِي زَيّ هَيك.,r aa H ii k u w n fi E a $ i r d a ' aa ii i ' ' i n t i z aa r ' a w ' i $ i y z a ii y h a y k
-line_42,كَم سِعِر الفُطُر الطَّبِيعِي؟,k a m s i E i r aa l f u T U r aa l T AA b i y E i y
-line_43,بِتْوَقَّع إِنِّي نْسِيت كَامِيرْتِي وَرَاي لَمَّا تْعَشَّيْت هُون اللَّيْلِة المَاضْيِة.,b i t uu a ' AA E ' i n ii y n s i y t k aa m i y r t i y uu a r aa y l a m aa t E a $ aa ii t h u w n aa l l aa ii l i aa l m aa D II I
-line_44,بِدِّي مْجَفِّف لِلشَّعِر.,b di m j a f ii f l i l $ aa E i r
-line_45,وَيْن أَقْرَب لْحَّام؟,wein ' a ' r A b l H aa m
-line_46,اِحْنَا هَوْن مِن يَوْم.,aa i H n aa h a uu n min ii a uu m
-line_47,شُو عَرْض الْأُوبِيرَا الْيُوم؟,$u E a r D aa l ' u w b i y r aa 'a l yom
-line_48,أَنَا رَايِح مشْوَار.,' a n aa r aa ii i H m $ uu aa r
-line_49,قَدِّيْش فِيْه نَاس فِي الرِّحْلَات السِّيَاحِيِّة؟,' A d ii $ f ii h n aa s fi aa l r ii H l aa t aa l s ii aa H ii
-line_50,صَحّ، وَأَنَا حَابِب أَسَجِّل التَّكَالِيف.,S A HH uu a ' a n aa H aa b i b ' a s a j ii l aa l t aa k aa l i y f
-line_51,إِنْهِي الْمُكَالَمِة وَاسْتَنَّى شْوَي لَو سَمَحْت.,' i n h i y aa l m u k aa l a m i uu aa s t a n aa $ uu a y l a w s a m a H t
-line_52,هَاد الطَّرِيق بِوَدِّي لَلْبَحَر.,h aa d aa l T AA r I y ' b i uu a d ii y l a l b a H a r
-line_53,تِسْعِيْن دُولَار لِتَذْكِرَة الذَّهَاب. كَاش وَإِلَّا بِطَاقَة؟,t i s E ii n d u w l aa r l i t a z k i r a aa l z aa h aa b k aa $ uu a ' i l aa b i T aa ' A
+line_14,شُو إِسْم الشَّخْص اللِّي بِتْحِبّ تِحْكِي مَعُه؟,$ uu ' i s m i $$ xx S i ll y b i t H i bb t i H k i y m a E u h
+line_15,مُمْكِن تِحْكِيه مَرِّة تَانْيِة؟,m u m k i n t i H k i y h m a rr t t aa n y i t
+line_16,شُو نَوْع الخُبِز اللِّي عِنْدَك؟,$ uu n a w E i l x U b i z i ll y E i n d a k
+line_17,أَنَا بَشْتَغِل بِشِرْكِة تِجَارِيِّة.,' a n aa b a $ t a g I l b i $ i r k i t t i j aa r i yy t
+line_18,مُمْكِن تِيجِي هُون بْأَسْرَع وَقِت، لَو سَمَحْت؟,m u m k i n t i y j i y h u w n b ' a s r a E w a ' I t l a w s a m a H t
+line_19,أَنَا حَسَّبْتْهُم حَوَالَِي مِيِّة وْخَمْسِين رِطِل.,' a n aa H a ss b t h u m H a w aa l a i y m i yy t w x A m s i y n r i T I l
+line_20,أَنَا لِسَّا مَا قَرَّرِت لَهَلَّأ. مُمْكِن تِعْطِينِي شْوَيِّة وَقِت أَكْتَر؟,' a n aa l i ss aa m aa ' A rr r I t l a h a ll ' m u m k i n t i E T I y n i y $ w a yy t w a ' I t ' a k t a r
+line_21,بِدِّي اِسْتَأْجِر سَيَّارَة أُوتُومَاتِيك لَيُومَيْن.,b i dd i ' i s t a ' j i r s a yy aa r a t ' u w t u w m aa t i y k l a y u w m a y n
+line_22,لَو سَمَحْت. بِدِّي أَحُطّ طَلَبِيِّة.,l a w s a m a H t b i dd i ' a H u TT T A l A b i yy t
+line_23,هَاد بَسّ دَلِيْل عَلَى تَقْدِيْرِي.,h aa d b a s d a l i y l E a l aa t a ' d i y r i y
+line_24,لَمَّا تُوْصَل هُنَاك، اِسْأَل حَدّ تَانِي، لَو سَمَحْت.,l a mm aa t u w S A l h u n aa k ' i s ' a l H a dd t aa n i y l a w s a m a H t
+line_25,هَاد مِش طَلَب حَدَا تَانِي غَيْرِي؟,h aa d m i $ T A l A b H a d aa t aa n i y g A y r I y
+line_26,رَاح نْضَل نِحْكِي هِيك وَيْن مَا نْرُوح؟,r aa H n D A l n i H k i y h i y k w ein m aa n r u w H
+line_27,مِيْن صَاحْبَك المُفَضَّل؟,m i y n S aa H b a k i l m u f a DD l
+line_28,مُمْكِن تْفَرْجِينِي الْحَلْقَة التَّانْيِة مِن الْيَسَار؟,m u m k i n t f a r j i y n i y i l H a l ' A t i tt aa nn y i t m i n i l y a s aa r
+line_29,وَبَعْدِين رَاح نَاخْدُه.,w a b a E d i y n r aa H n aa x d u h
+line_30,مِش فَاهْمِة شَرْحِك.,m i $ f aa h m i t $ a r H i k
+line_31,قَدِّيْش مَرْتَك طَبَّاخَة رَائِعَة.,' A dd y $ m a r t a k T A bb aa x A t r aa ' i E a t
+line_32,مُمْكِن تِْعِيرْنِي القِطْعَة اللِّي بْتْرْفَع الحَبْل، لَو سَمَحْت؟,m u m k i n t i E i y r n i y i l ' I T E a t i ll y b t r f a E i l H a b l l a w s a m a H t
+line_33,رَاح عَلَى المَوْقِف.,r aa H E a l aa i l m a w ' I f
+line_34,مِش مَرْغُوب بِنِسْبِة كْبِيرَة.,m i $ m a r g U w b b i n i s b i t k b i y r a t
+line_35,اُه، يَالا. دُولَارَيْن بَسّ.,' u h y i l aa d u w l aa r a y n b a s
+line_36,فِي حَدّ اقْتَحَم غُرْفِتِي اللَّيْلِة المَاضْيِة.,f i y H a dd aa ' t a H a m g U r f i t i y i ll y l i t i l m aa D y I t
+line_37,شِيكَّات سِيَاحِيِّة. شُكْراً إِلَك. هِيّ تَذْكَرْتَك وبِطَاقَة الصُّعُوْد تَبَعَك. كُون هُنَاك، لَو سَمَحْت، قَبِل بِسَاعَة وَحْدِة مِن رِحْلِة الطَّيَرَان.,$ i y kk aa t s i y aa H i yy t $ u k r a n ' i l a k h i yy t a z k a r t a k w b i T aa ' A t i SS EE u w d t a b a E a k k u w n h u n aa k l a w s a m a H t ' A b i l b i s aa E a t w a H d i t m i n r i H l i t i TT y A rr aa n
+line_38,عِنْدِي دَوَا إِلِي.,E i n d i y d a w aa ' i l i y
+line_39,لَازِم يْكُون هَادِي.,l aa z i m y k u w n h aa d i
+line_40,لَا، هِيِّ بْتِتْضَمَّن الضَّرِيبِة وقِيمِة الخِدْمِة.,l aa h i yy b t i t D A mm n i DD rr I y b i t w ' I y m i t i l x I d m i t
+line_41,رَاح يْكُون فِي عَشِر دَقَايِق إِنْتِظَار أَو إِشِي زَيّ هَيك.,r aa H y k u w n f i y E a $ i r d a ' aa y i ' ' i n t i z aa r ' a w ' i $ i y z a yy h a y k
+line_42,كَم سِعِر الفُطُر الطَّبِيعِي؟,k a m s i E i r i l f u T U r i TT bb i y E i y
+line_43,بِتْوَقَّع إِنِّي نْسِيت كَامِيرْتِي وَرَاي لَمَّا تْعَشَّيْت هُون اللَّيْلِة المَاضْيِة.,b i t w a '' E ' i nn y n s i y t k aa m i y r t i y w a r aa y l a mm aa t E a $$ y t h u w n i ll y l i t i l m aa D y I t
+line_44,بِدِّي مْجَفِّف لِلشَّعِر.,b i dd i m j a ff f l i l $$ E i r
+line_45,وَيْن أَقْرَب لْحَّام؟,w ein ' a ' r A b l HH aa m
+line_46,اِحْنَا هَوْن مِن يَوْم.,' i H n aa h a w n m i n y a w m
+line_47,شُو عَرْض الْأُوبِيرَا الْيُوم؟,$ uu E a r D i l ' u w b i y r aa i l y u w m
+line_48,أَنَا رَايِح مشْوَار.,' a n aa r aa y i H m $ w aa r
+line_49,قَدِّيْش فِيْه نَاس فِي الرِّحْلَات السِّيَاحِيِّة؟,' A dd y $ f i y h n aa s f i y i rr HH l aa t i ss y aa HH i yy t
+line_50,صَحّ، وَأَنَا حَابِب أَسَجِّل التَّكَالِيف.,S A HH w a ' a n aa H aa b i b ' a s a jj l i tt kk aa l i y f
+line_51,إِنْهِي الْمُكَالَمِة وَاسْتَنَّى شْوَي لَو سَمَحْت.,' i n h i y i l m u k aa l a m i t w aa s t a nn aa $ w a y l a w s a m a H t
+line_52,هَاد الطَّرِيق بِوَدِّي لَلْبَحَر.,h aa d i TT rr I y ' b i w a dd y l a l b a H a r
+line_53,تِسْعِيْن دُولَار لِتَذْكِرَة الذَّهَاب. كَاش وَإِلَّا بِطَاقَة؟,t i s E i y n d u w l aa r l i t a z k i r a t i zz hh aa b k aa $ w a ' i ll aa b i T aa ' A t
 line_54,هَاد حَارّ كْتِير؟,h aa d H aa rr k t i y r
-line_55,هَاي الشَّنْطَة بِتْلَائِم الجَوّ بِْكُلّ أَحْوَالُه؟,hay aa l $ aa n T A b i t l aa ' i m aa l j a uu w b i k u ll ' a H uu aa l u h
-line_56,عَلَى طَوكْيُو، لَو سَمَحْت.,E a l aa T A w k ii u w l a w s a m a H t
-line_57,عِنْدَك وَاحَد أَكْبَر؟,E i n d a k uu aa H a d ' a k b a r
+line_55,هَاي الشَّنْطَة بِتْلَائِم الجَوّ بِْكُلّ أَحْوَالُه؟,h ay i $$ nn T A t b i t l aa ' i m i l j a ww b i k u ll ' a H w aa l u h
+line_56,عَلَى طَوكْيُو، لَو سَمَحْت.,E a l aa T A w k y u w l a w s a m a H t
+line_57,عِنْدَك وَاحَد أَكْبَر؟,E i n d a k w aa H a d ' a k b a r
 line_58,بَقْدَر آخُد بَرْنَامِج؟,b a ' d a r ' aa x U d b a r n aa m i j
-line_59,الْمِيزَانِيِّة أَقَلّ مِن أَلْف دُولَار.,aa l m i y z aa n ii ' a ' A ll min ' a l f d u w l aa r
-line_60,لَو سَمَحْت أَعْطِينِي اِزِن مُرُور لَمُدِّة أُسْبُوع.,l a w s a m a H t ' a E T I y n i y aa i z i n m u r u w r l a m u d ii ' u s b u w E
-line_61,أَوُوه، وَلَا اْشِي. اِنْت هُون، عَلَى كُلّ حَال.,' a uu u w h uu a l aa aa $ i y aa i n t h u w n E a l aa k u ll H aa l
-line_62,بِدْنَا زَاوْيِة هَادْيِة، اِزَا مُمْكِن.,b i d n aa z aa uu ii i 'a di aa i z aa m u m k i n
-line_63,أَنَا رَايِح عَلَى بَارِيس.,' a n aa r aa ii i H E a l aa b aa r i y s
-line_64,تَمَام، بِدَّك تِشْرَب قَهْوِتَك هَلَّأ وَالَّا بَعْدِين؟,t a m aa m b i d aa k t i $ r a b ' A h uu i t a k h a l aa ' uu aa l aa b a E d i y n
-line_65,بِدِّي أَبْعَت هَاد بِالإِيمِيل الجَوِّي عَلَى اليَابَان.,b di ' a b E a t h aa d b i aa l ' i y m i y l aa l j a uu ii y E a l aa aa l ii aa b aa n
-line_66,أَنَا مُوَافِق. لَازِم يْكُون كْتِير طَبِيعِي.,' a n aa m uu aa f i ' l aa z i m ii k u w n k t i y r T A b i y E i y
-line_67,كَان رَوْعَة. شُكْراً الَّك.,k aa n r a uu E a $ u k r a n aa l aa k
-line_68,لَحَوَالَيّ كَم يُوم.,l a H a uu aa l a ii y k a m ii u w m
-line_69,فِي بُوتِيك قَرِيب مِن هُون؟,fi b u w t i y k ' A r I y b min h u w n
-line_70,بِدّْهَا خَمْرَة.,b i dd h aa x A m r a
-line_71,بِدِّي كِيس بَشَّار، لَو سَمَحْت.,b di k i y s b a $ aa r l a w s a m a H t
+line_59,الْمِيزَانِيِّة أَقَلّ مِن أَلْف دُولَار.,i l m i y z aa n i yy t ' a ' A ll m i n ' a l f d u w l aa r
+line_60,لَو سَمَحْت أَعْطِينِي اِزِن مُرُور لَمُدِّة أُسْبُوع.,l a w s a m a H t ' a E T I y n i y ' i z i n m u r u w r l a m u dd t ' u s b u w E
+line_61,أَوُوه، وَلَا اْشِي. اِنْت هُون، عَلَى كُلّ حَال.,' a w u w h w a l aa aa $ i y ' i n t h u w n E a l aa k u ll H i l
+line_62,بِدْنَا زَاوْيِة هَادْيِة، اِزَا مُمْكِن.,b i d n aa z aa w y i t h aa d i ' i z aa m u m k i n
+line_63,أَنَا رَايِح عَلَى بَارِيس.,' a n aa r aa y i H E a l aa b aa r i y s
+line_64,تَمَام، بِدَّك تِشْرَب قَهْوِتَك هَلَّأ وَالَّا بَعْدِين؟,t a m aa m b i dd k t i $ r a b ' A h w i t a k h a ll ' w i l a aa b a E d i y n
+line_65,بِدِّي أَبْعَت هَاد بِالإِيمِيل الجَوِّي عَلَى اليَابَان.,b i dd i ' a b E a t h aa d b i aa l ' i y m i y l i l j a ww y E a l aa i l y aa b aa n
+line_66,أَنَا مُوَافِق. لَازِم يْكُون كْتِير طَبِيعِي.,' a n aa m u w aa f i ' l aa z i m y k u w n k t i y r T A b i y E i y
+line_67,كَان رَوْعَة. شُكْراً الَّك.,k aa n r a w E a t $ u k r a n i l a k
+line_68,لَحَوَالَيّ كَم يُوم.,l a H a w aa l a yy k a m y u w m
+line_69,فِي بُوتِيك قَرِيب مِن هُون؟,f i y b u w t i y k ' A r I y b m i n h u w n
+line_70,بِدّْهَا خَمْرَة.,b i dd h aa x A m r a t
+line_71,بِدِّي كِيس بَشَّار، لَو سَمَحْت.,b i dd i k i y s b a $$ aa r l a w s a m a H t

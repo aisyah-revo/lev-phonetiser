@@ -130,75 +130,29 @@ class LevantinePhonetiser:
 
     fixedWords = {
         # Demonstratives
-        u'\u0647\u0627\u062f\u0627': [u"'a da"],             # هادا - this (m)
-        u'\u0647\u0627\u062f\u064a': [u"'a di"],             # هادي - this (f)
-        u'\u0647\u0627\u062f\u0648\u0644': [u"'a d ol"],     # هادول - these
-        u'\u0647\u0630\u064a': [u"'a ze"],                   # هذي - this (alternative)
-        u'\u0647\u0627\u064a': [u"hay"],                     # هاي - this (f)
-        u'\u0647\u0627\u064a\u0647': [u"hay ye"],            # هاييه - this is
-
-        # Definite article variations
-        u'\u0627\u0644\u0644\u064a': [u"'al li"],            # اللي - the one who/which
-
+        u'\u0647\u0627\u062f\u0627': [u"h aa d a"],             # hada
+        u'\u0647\u0627\u062f\u064a': [u"h aa d i"],             # hadi
+        u'\u0647\u0627\u062f\u0648\u0644': [u"h aa d o l"],     # hadol
+        u'\u0647\u0627\u064a': [u"h ay"],                       # hay
+        
         # Pronouns
-        u'\u0627\u0646\u0627': [u"'a na"],                   # أنا - I
-        u'\u0627\u0646\u062a\u0647': [u"'an te"],            # انتة - you (m)
-        u'\u0627\u0646\u062a\u064a': [u"'an ti"],            # انتة - you (f)
-        u'\u0627\u0646\u062a\u0648': [u"'an to"],            # انتو - you (pl)
-        u'\u0647\u0648\u0647': [u"huvve"],                   # هوه - he
-        u'\u0647\u064a\u0647': [u"hiyye"],                   # هيه - she
-        u'\u0647\u0645\u0647': [u"himme"],                   # همه - they (m)
-        u'\u0647\u0646\u0647': [u"hinne"],                   # هن - they (f)
-
-        # Common verbs - present
-        u'\u0628\u062f\u064a': [u"b di"],                    # بدي - I want
-        u'\u0628\u062a\u0639': [u"b ti'" ],                  # بتع - you want (m)
-        u'\u0628\u062a\u064a': [u"b ti"],                    # بتي - you want (f)
-        u'\u0628\u064a\u0639': [u"bi '" ],                   # بيع - he wants
-        u'\u0628\u062a\u0639\u0648': [u"b ti 'u"],           # بتعو - you want (pl)
-
-        # Prepositions and particles
-        u'\u0641\u064a': [u"fi"],                            # في - in/at
-        u'\u0645\u0639': [u"mi'" ],                          # مع - with
-        u'\u0639\u0646': [u"'an"],                           # عن - about
-        u'\u0639\u0644\u0649': [u"'a la"],                   # على - on
-        u'\u0645\u0646': [u"min"],                           # من - from
-        u'\u0644\u0644\u0647': [u"la"],                      # له - for him
-        u'\u0644\u0644\u064a': [u"li"],                      # لي - for me
-        u'\u0644\u0644\u0643': [u"lak"],                     # لك - for you
-        u'\u0644\u0644\u0643': [u"lik"],                     # لك - for you (f)
-
-        # Question words
-        u'\u0634\u0648': [u"$u"],                            # شو - what
-        u'\u0644\u064a\u0634': [u"lei$"],                    # ليش - why
-        u'\u0648\u064a\u0646': [u"wein"],                    # وين - where
-        u'\u0627\u064a\u0648': [u"'ayy"],                    # اي - which
-
-        # Negation
-        u'\u0645\u0627': [u"ma"],                            # ما - not
-        u'\u0645\u0648': [u"mu"],                            # مو - not (copula)
-
-        # Common words
-        u'\u0644\u0627': [u"la"],                            # لا - no
-        u'\u0646\u0639\u0645': [u"na'am"],                   # نعم - yes
-        u'\u0628\u0633': [u"bas"],                           # بس - but/only
-        u'\u0643\u0645\u0627\u0646': [u"ki man"],            # كيف - how (alternative)
-        u'\u0627\u064a\u0648\u0629': [u"'ayye"],             # اية - how
-
-        # Time expressions
-        u'\u0627\u0644\u062d\u064a\u0646': [u"'a l Hi an"],  # الحين - now
-        u'\u0627\u0644\u064a\u0648\u0645': [u"'a l yom"],    # اليوم - today
-        u'\u0628\u0643\u0631\u0647': [u"bukre"],             # بكرة - tomorrow
-
-        # Allah and religious terms
-        u'\u0627\u0644\u0644\u0647': [u"'al la"],            # الله - Allah
-        u'\u0628\u0627\u0644\u0644\u0647': [u"bal la"],      # بالله - by God
-        u'\u0627\u0644\u0644\u0647\u0645': [u"'al ham"],     # اللهم - O God (short)
-        u'\u0627\u0644\u062d\u0645\u062f': [u"'al ham"],     # الحمد - praise (short)
-
-        # MSA borrowings that keep MSA pronunciation in Levantine
-        u'\u0627\u0644\u0631\u062d\u0645\u0646': [u"raH man", "rr aH man"],  # الرحمن
-        u'\u0627\u0644\u0631\u062d\u064a\u0645': [u"ra Hiim", "rr aH iim"],  # الرحيم
+        u'\u0627\u0646\u0627': [u"' a n a"],                    # ana
+        u'\u0627\u0646\u062a\u0647': [u"' a n t e"],            # ente
+        u'\u0627\u0646\u062a\u064a': [u"' a n t i"],            # enti
+        u'\u0647\u0648\u0647': [u"h u ww e"],                   # huwwe
+        u'\u0647\u064a\u0647': [u"h i yy e"],                   # hiyye
+        
+        # Verbs & Particles (CORRECTED PRONUNCIATIONS)
+        u'\u0628\u062f\u064a': [u"b i dd i"],                   # biddi (Corrected from b di)
+        u'\u0634\u0648': [u"$ uu"],                             # shuu (Corrected from $u)
+        u'\u0644\u064a\u0634': [u"l ei $"],                     # leish
+        u'\u0648\u064a\u0646': [u"w ein"],                      # wein
+        u'\u0645\u0648': [u"m uu"],                             # muu
+        u'\u0628\u0633': [u"b a s"],                            # bas
+        
+        # Common
+        u'\u0627\u0644\u0644\u0647': [u"' a ll a"],             # Allah
+        u'\u064a\u0644\u0627': [u"y a ll a"],                   # Yalla
     }
 
     #==========================================================================
@@ -310,111 +264,210 @@ class LevantinePhonetiser:
     def phonetise_word(self, word: str) -> List[str]:
         """
         Phonetically transcribe a single Arabic word.
-
-        Returns a list of possible pronunciations.
         """
         if not word or word.strip() == u'-':
             return []
 
-        # Preprocess
+        original_word = word
         word = self.preprocess_text(word)
-
-        # Get Buckwalter transliteration
         orthography = self.arabic_to_buckwalter(word)
 
         # Check fixed words
-        fixed = self.check_fixed_word(word, orthography)
+        fixed = self.check_fixed_word(original_word, orthography)
         if fixed:
             return fixed
 
-        # Process word with boundary markers
-        word = u'bb' + word + u'ee'
+        # Sun letters for definite article assimilation
+        sun_letters = [u'\u062a', u'\u062b', u'\u062f', u'\u0630',
+                      u'\u0631', u'\u0632', u'\u0633', u'\u0634',
+                      u'\u0635', u'\u0636', u'\u0637', u'\u0638',
+                      u'\u0644', u'\u0646']
+
+        # Pad word for lookahead/lookbehind
+        # Use special padding that won't be confused with actual consonants
+        word = u'xx' + word + u'zz'
         phones = []
         emphatic_context = False
+        in_definite_article = False
+        next_is_doubled = False  # For sun letter assimilation
+        skip_next = False  # Skip shadda if already processed
+        skip_next2 = False  # Skip second char (vowel before shadda)
 
-        # Track previous and next letters for context
         for index in range(2, len(word) - 2):
-            letter = word[index]
-            letter1 = word[index + 1]
-            letter2 = word[index + 2]
-            letter_1 = word[index - 1]
-            letter_2 = word[index - 2]
+            # Skip this character if it was already processed as part of lookahead
+            if skip_next:
+                skip_next = False
+                continue
+            # Also skip if this is the second character to skip (vowel + shadda case)
+            if skip_next2:
+                skip_next2 = False
+                continue
 
-            # Track emphatic context
-            if letter in self.consonants and letter not in self.emphatics + [u'\u0631', u'\u0644']:
-                emphatic_context = False
+            letter = word[index]
+            letter1 = word[index + 1]  # Next char
+            letter2 = word[index + 2]  # Next next char
+            letter_1 = word[index - 1]  # Prev char
+            letter_2 = word[index - 2]  # Prev prev char
+
+            # Check for definite article start (ال)
+            if letter == u'\u0627' and letter1 == u'\u0644' and letter_2 == 'x':
+                in_definite_article = True
+                # Check if next letter (after lam) is a sun letter
+                if index + 2 < len(word) - 2 and word[index + 2] in sun_letters:
+                    next_is_doubled = True
+                # In Levantine, definite article is "il" or "el"
+                phones.append('i')
+                continue  # Skip the alif, process lam next
+
+            # Still in definite article - process lam
+            if in_definite_article and letter == u'\u0644':
+                if next_is_doubled:
+                    # Sun letter: lam is silent, next letter will be doubled
+                    phones.append('')
+                else:
+                    # Moon letter: lam is pronounced
+                    phones.append('l')
+                in_definite_article = False
+                continue
+
+            # Check for initial alif with short vowel (اَ اُ اِ إَ إُ إِ أَ أُ أِ)
+            # These should be treated as hamza + vowel, skip the next diacritic
+            if (letter in [u'\u0627', u'\u0623', u'\u0625'] and letter_2 == 'x' and
+                letter1 in [u'\u064e', u'\u064f', u'\u0650']):
+                phones.append("'")
+                phones.append(self.vowelMap[letter1][0])  # Always use non-emphatic for initial
+                skip_next = True
+                continue
+
+            # 1. Emphatic Spread Logic
             if letter in self.emphatics:
                 emphatic_context = True
+            elif letter in self.consonants and letter not in [u'\u0631', u'\u0644', u'\u0648', u'\u064a']:
+                emphatic_context = False
 
-            # Handle consonants
+            vowel_choice = 1 if emphatic_context else 0
+
+            # 2. Handle Consonants (check for shadda AFTER the consonant)
             if letter in self.consonantMap:
-                phones.append(self.consonantMap[letter])
-
-            # Handle lam (definite article assimilation)
-            elif letter == u'\u0644':
-                # Sun letter assimilation in definite article
-                sun_letters = [u'\u062a', u'\u062b', u'\u062f', u'\u0630',
-                              u'\u0631', u'\u0632', u'\u0633', u'\u0634',
-                              u'\u0635', u'\u0636', u'\u0637', u'\u0638',
-                              u'\u0644', u'\u0646']
-                if (letter1 not in self.diacritics and letter1 not in self.vowelMap and
-                    letter2 in [u'\u0651'] and letter1 in sun_letters):
-                    # Assimilate lam
-                    phones.append('')  # Lam is omitted
+                consonant = self.consonantMap[letter]
+                # Check if there's a shadda after this consonant (may be after a vowel)
+                # Shadda can be immediately after, or after a vowel diacritic
+                has_shadda = (letter1 == u'\u0651') or (letter1 in self.diacriticsWithoutShadda and letter2 == u'\u0651')
+                # Also need to skip the appropriate number of characters
+                if has_shadda:
+                    phones.append(consonant + consonant)
+                    # Skip the shadda (and possibly the vowel before it)
+                    if letter1 == u'\u0651':
+                        skip_next = True
+                    else:
+                        skip_next = True
+                        skip_next2 = True  # Will skip two characters
+                elif next_is_doubled:
+                    # Double the sun letter (from definite article)
+                    phones.append(consonant + consonant)
+                    next_is_doubled = False
                 else:
-                    phones.append('l')
+                    phones.append(consonant)
 
-            # Handle shadda (gemination)
+            # Also handle ambiguous consonants (ل، و، ي) with shadda
+            elif letter in self.ambiguousConsonantMap:
+                consonant = self.ambiguousConsonantMap[letter]
+                # Handle list values for ta marbuta
+                if isinstance(consonant, list):
+                    consonant = consonant[0]  # Use first value
+
+                # Check if there's a shadda after this consonant
+                has_shadda = (letter1 == u'\u0651') or (letter1 in self.diacriticsWithoutShadda and letter2 == u'\u0651')
+                if has_shadda:
+                    phones.append(consonant + consonant)
+                    # Skip the shadda (and possibly the vowel before it)
+                    if letter1 == u'\u0651':
+                        skip_next = True
+                    else:
+                        skip_next = True
+                        skip_next2 = True  # Will skip two characters
+                else:
+                    phones.append(consonant)
+
+            # 3. Handle Shadda (Gemination) - skip if already processed
             elif letter == u'\u0651':
-                if letter_1 not in [u'\u0648', u'\u064a'] and phones:
-                    phones[-1] += phones[-1]
+                # Shadda is handled when we process the consonant (lookahead)
+                # If we encounter it here, it means the previous consonant didn't handle it
+                # Check if previous phone exists and is a single consonant
+                if phones and len(phones[-1]) == 1 and phones[-1] not in ['a', 'i', 'u', 'e', 'o', 'aa', 'ii', 'uu']:
+                    # Double it
+                    phones[-1] = phones[-1] + phones[-1]
 
-            # Handle ta marbuta
+            # 4. Handle Ta Marbuta
             elif letter == u'\u0629':
-                if letter1 in self.diacritics:
+                if letter1 in self.diacritics or letter1 in self.vowelMap:
                     phones.append('t')
                 else:
-                    # In Levantine, -a is more common than -at in spoken
-                    if self.simplify_feminine_endings:
-                        phones.append('')
-                    else:
-                        phones.append('t')
+                    phones.append('a' if not self.simplify_feminine_endings else 'e')
 
-            # Handle vowels
-            elif letter in self.vowelMap:
-                vowel_choice = 1 if emphatic_context else 0
+            # 5. Handle Alif (Long Vowel)
+            elif letter in [u'\u0627', u'\u0649']:
+                # Skip initial alif with short vowel - already handled earlier
+                if letter_2 == 'x' and letter1 in [u'\u064e', u'\u064f', u'\u0650']:
+                    continue
+                # If preceded by a vowel diacritic, it's part of diphthong or just alif
+                elif letter_1 in self.vowelMap or letter_1 in [u'\u064e', u'\u064f', u'\u0650']:
+                    phones.append(self.vowelMap[u'\u0627'][vowel_choice][0])
+                else:
+                    phones.append(self.vowelMap[u'\u0627'][vowel_choice][0])
 
-                # Alif handling
-                if letter in [u'\u0627', u'\u0649']:
-                    if letter1 == u'e':  # End of word
-                        phones.append(self.vowelMap[letter][vowel_choice][0])
-                    elif letter_1 in [u'\u0648', u'\u0643'] and letter_2 == u'b':
-                        # Special case
-                        phones.append([self.vowelMap[letter][vowel_choice][0], u'a'])
-                    else:
-                        phones.append(self.vowelMap[letter][vowel_choice][0])
+            # 6. Handle Waw (و) and Ya (ي)
+            elif letter in [u'\u0648', u'\u064a']:
+                is_consonant = False
+                handled = False  # Track if we've already added something
 
-                # Waw and Ya (can be consonants or vowels)
-                elif letter in [u'\u0648', u'\u064a']:
+                # If start of word, it's a consonant (e.g., Wein, Yalla)
+                if letter_2 == 'x':
+                    is_consonant = True
+
+                # If at end of word (before 'z' padding), it's NOT a long vowel - consonant only
+                if letter1 == 'z':
+                    phones.append(self.ambiguousConsonantMap[letter])
+                    handled = True
+
+                # If followed by shadda, it's doubled (e.g., huwwa)
+                elif letter1 == u'\u0651':
                     consonant = self.ambiguousConsonantMap[letter]
+                    phones.append(consonant + consonant)
+                    skip_next = True
+                    handled = True
 
-                    # Check if acting as vowel
-                    if (letter1 in self.diacriticsWithoutShadda + [u'\u0627', u'\u0649'] or
-                        (letter1 in [u'\u0648', u'\u064a'] and
-                         letter2 not in self.diacritics + [u'\u0627', u'\u0648', u'\u064a'])):
+                # If followed by alif, it's consonant + alif (consonant part only here)
+                elif letter1 == u'\u0627':
+                    phones.append(self.ambiguousConsonantMap[letter])
+                    handled = True
 
-                        phones.append(self.vowelMap[letter][vowel_choice][0])
-                    elif letter1 in [u'\u0651']:
-                        phones.append(self.vowelMap[letter][vowel_choice][0])
-                        phones.append(consonant)
-                    else:
-                        phones.append(consonant)
+                # If followed by a short vowel diacritic, it's consonant + that vowel
+                elif letter1 in [u'\u064e', u'\u064f', u'\u0650']:
+                    phones.append(self.ambiguousConsonantMap[letter])
+                    handled = True  # The vowel will be processed next
 
-                # Short vowels
-                elif letter in [u'\u064e', u'\u064f', u'\u0650']:
-                    phones.append(self.vowelMap[letter][vowel_choice])
+                if is_consonant and not handled:
+                    phones.append(self.ambiguousConsonantMap[letter])
+                    handled = True
 
-        # Generate all pronunciation possibilities from phones list
+                # If acting as long vowel (uu or ii)
+                if not handled and letter1 not in [u'\u0627', u'\u0651', u'\u064e', u'\u064f', u'\u0650', 'z']:
+                    phones.append(self.vowelMap[letter][vowel_choice][0])
+
+            # 7. Handle Short Vowels
+            elif letter in [u'\u064e', u'\u064f', u'\u0650']:
+                phones.append(self.vowelMap[letter][vowel_choice])
+
+            # 8. Handle Hamza variants (أ إ ء ئ ؤ)
+            elif letter in [u'\u0623', u'\u0625', u'\u0621', u'\u0626', u'\u0624']:
+                # If followed by short vowel, add hamza + vowel
+                if letter1 in [u'\u064e', u'\u064f', u'\u0650']:
+                    phones.append("'")
+                    phones.append(self.vowelMap[letter1][vowel_choice])
+                else:
+                    phones.append("'")
+
         return self._generate_pronunciations(phones)
 
     def _generate_pronunciations(self, phones: List) -> List[str]:
@@ -459,25 +512,21 @@ class LevantinePhonetiser:
             return ''
 
         result = []
-        prev_letter = ''
-
-        for i, letter in enumerate(pronunciation):
-            # Remove duplicate vowels
-            if letter in ['aa', 'uu', 'ii', 'AA', 'UU', 'II']:
-                if len(result) > 0 and result[-1][-1] == letter[-1]:
-                    result[-1] = letter
-                else:
-                    result.append(letter)
-            # Remove duplicate short vowels
-            elif letter in ['u', 'i', 'a', 'U', 'I', 'A']:
-                if prev_letter == letter:
-                    continue
-                else:
-                    result.append(letter)
+        for phone in pronunciation:
+            if phone == '':
+                continue
+            # Handle doubled consonants (from shadda or sun letters)
+            if len(phone) == 2 and phone[0] == phone[1]:
+                result.append(phone)
+            # Handle long vowels
+            elif phone in ['aa', 'uu', 'ii', 'AA', 'UU', 'II']:
+                result.append(phone)
+            # Handle short vowels
+            elif phone in ['u', 'i', 'a', 'U', 'I', 'A', 'e', 'o']:
+                result.append(phone)
+            # Handle single consonants
             else:
-                result.append(letter)
-
-            prev_letter = letter
+                result.append(phone)
 
         # Join and return
         return ' '.join(result)
