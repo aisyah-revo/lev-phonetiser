@@ -144,7 +144,7 @@ class LevantinePhonetiser:
         
         # Verbs & Particles (CORRECTED PRONUNCIATIONS)
         u'\u0628\u062f\u064a': [u"b i dd i"],                   # biddi (Corrected from b di)
-        u'\u0634\u0648': [u"$ uu"],                             # shuu (Corrected from $u)
+        u'\u0634\u0648': [u"$ u"],                              # shu (NOT shuu - waw is consonant here)
         u'\u0644\u064a\u0634': [u"l ei $"],                     # leish
         u'\u0648\u064a\u0646': [u"w ein"],                      # wein
         u'\u0645\u0648': [u"m uu"],                             # muu
@@ -362,6 +362,9 @@ class LevantinePhonetiser:
                     else:
                         skip_next = True
                         skip_next2 = True  # Will skip two characters
+                    # Reset next_is_doubled flag (shadda doubling and sun letter doubling are the same effect)
+                    if next_is_doubled:
+                        next_is_doubled = False
                 elif next_is_doubled:
                     # Double the sun letter (from definite article)
                     phones.append(consonant + consonant)
@@ -386,6 +389,13 @@ class LevantinePhonetiser:
                     else:
                         skip_next = True
                         skip_next2 = True  # Will skip two characters
+                    # Reset next_is_doubled flag (shadda doubling and sun letter doubling are the same effect)
+                    if next_is_doubled:
+                        next_is_doubled = False
+                elif next_is_doubled:
+                    # Double the sun letter (from definite article)
+                    phones.append(consonant + consonant)
+                    next_is_doubled = False
                 else:
                     phones.append(consonant)
 
