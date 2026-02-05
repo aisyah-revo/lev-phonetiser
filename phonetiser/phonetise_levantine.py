@@ -134,22 +134,23 @@ class LevantinePhonetiser:
         u'\u0647\u0627\u062f\u064a': [u"h aa d i"],             # hadi
         u'\u0647\u0627\u062f\u0648\u0644': [u"h aa d o l"],     # hadol
         u'\u0647\u0627\u064a': [u"h ay"],                       # hay
-        
-        # Pronouns
-        u'\u0627\u0646\u0627': [u"' a n a"],                    # ana
+
+        # Pronouns (Levantine pronunciations - no initial hamza for 'ana')
+        u'\u0627\u0646\u0627': [u"aa n a"],                      # ana (Levantine: aa-na)
+        u'\u0623\u0646\u0627': [u"aa n a"],                      # ana with initial hamza (same pronunciation)
         u'\u0627\u0646\u062a\u0647': [u"' a n t e"],            # ente
         u'\u0627\u0646\u062a\u064a': [u"' a n t i"],            # enti
         u'\u0647\u0648\u0647': [u"h u ww e"],                   # huwwe
         u'\u0647\u064a\u0647': [u"h i yy e"],                   # hiyye
-        
+
         # Verbs & Particles (CORRECTED PRONUNCIATIONS)
-        u'\u0628\u062f\u064a': [u"b i dd i"],                   # biddi (Corrected from b di)
+        u'\u0628\u062f\u064a': [u"b i dd i"],                   # biddi
         u'\u0634\u0648': [u"$ u"],                              # shu (NOT shuu - waw is consonant here)
         u'\u0644\u064a\u0634': [u"l ei $"],                     # leish
         u'\u0648\u064a\u0646': [u"w ein"],                      # wein
         u'\u0645\u0648': [u"m uu"],                             # muu
         u'\u0628\u0633': [u"b a s"],                            # bas
-        
+
         # Common
         u'\u0627\u0644\u0644\u0647': [u"' a ll a"],             # Allah
         u'\u064a\u0644\u0627': [u"y a ll a"],                   # Yalla
@@ -230,7 +231,9 @@ class LevantinePhonetiser:
 
         # Normalize hamza forms
         text = text.replace(u'\u0627\u064b', u'\u064b')  # alif + fatHatayn
-        text = text.replace(u'\u064e\u0627', u'\u0627')  # fatHa + alif → alif
+        # NOTE: We DON'T do fatHa + alif → alif normalization here because it breaks
+        # words like قَال (said) where the fatha is a short vowel on qaf, not part of alif
+        # text = text.replace(u'\u064e\u0627', u'\u0627')  # REMOVED - handled in main loop
         text = text.replace(u'\u064e\u0649', u'\u0649')  # fatHa + alif maqsura
         text = text.replace(u' \u0627', u' ')            # standalone alif
 
@@ -310,14 +313,21 @@ class LevantinePhonetiser:
             letter_2 = word[index - 2]  # Prev prev char
 
             # Check for definite article start (ال)
+            # Make sure this is actually a definite article, not just ا+ل sequence in the middle of a word
             if letter == u'\u0627' and letter1 == u'\u0644' and letter_2 == 'x':
-                in_definite_article = True
-                # Check if next letter (after lam) is a sun letter
-                if index + 2 < len(word) - 2 and word[index + 2] in sun_letters:
-                    next_is_doubled = True
-                # In Levantine, definite article is "il" or "el"
-                phones.append('i')
-                continue  # Skip the alif, process lam next
+                # Additional check: look at letter_1 to see if there's a consonant before the alif
+                # If letter_1 is a consonant (like ق in قال), this is NOT a definite article
+                if letter_1 in self.consonants or letter_1 in self.emphatics:
+                    # This is something like قال (said), not the definite article
+                    pass  # Don't treat as definite article, fall through to normal processing
+                else:
+                    in_definite_article = True
+                    # Check if next letter (after lam) is a sun letter
+                    if index + 2 < len(word) - 2 and word[index + 2] in sun_letters:
+                        next_is_doubled = True
+                    # In Levantine, definite article is "il" or "el"
+                    phones.append('i')
+                    continue  # Skip the alif, process lam next
 
             # Still in definite article - process lam
             if in_definite_article and letter == u'\u0644':
@@ -331,11 +341,17 @@ class LevantinePhonetiser:
                 continue
 
             # Check for initial alif with short vowel (اَ اُ اِ إَ إُ إِ أَ أُ أِ)
-            # These should be treated as hamza + vowel, skip the next diacritic
-            if (letter in [u'\u0627', u'\u0623', u'\u0625'] and letter_2 == 'x' and
-                letter1 in [u'\u064e', u'\u064f', u'\u0650']):
+            # In Levantine, plain alif (ا) with short vowel should be just the vowel
+            # But alif with explicit hamza (أ إ) should be hamza + vowel
+            if letter == u'\u0627' and letter_2 == 'x' and letter1 in [u'\u064e', u'\u064f', u'\u0650']:
+                # Plain alif - just the vowel, no hamza
+                phones.append(self.vowelMap[letter1][0])
+                skip_next = True
+                continue
+            elif letter in [u'\u0623', u'\u0625'] and letter_2 == 'x' and letter1 in [u'\u064e', u'\u064f', u'\u0650']:
+                # Alif with explicit hamza - hamza + vowel
                 phones.append("'")
-                phones.append(self.vowelMap[letter1][0])  # Always use non-emphatic for initial
+                phones.append(self.vowelMap[letter1][0])
                 skip_next = True
                 continue
 
@@ -355,16 +371,20 @@ class LevantinePhonetiser:
                 has_shadda = (letter1 == u'\u0651') or (letter1 in self.diacriticsWithoutShadda and letter2 == u'\u0651')
                 # Also need to skip the appropriate number of characters
                 if has_shadda:
+                    # Handle sun letter doubling vs shadda (or both)
+                    # If both sun letter and shadda, it's 4x which equals 2x phonetically
                     phones.append(consonant + consonant)
-                    # Skip the shadda (and possibly the vowel before it)
-                    if letter1 == u'\u0651':
-                        skip_next = True
+                    next_is_doubled = False
+
+                    # If there's a vowel diacritic before the shadda, add it AFTER the doubled consonant
+                    if letter1 in self.vowelMap and letter2 == u'\u0651':
+                        phones.append(self.vowelMap[letter1][vowel_choice])
+                        skip_next2 = True  # Skip both the vowel and shadda
+                    elif letter1 == u'\u0651':
+                        skip_next = True  # Just skip the shadda
                     else:
                         skip_next = True
                         skip_next2 = True  # Will skip two characters
-                    # Reset next_is_doubled flag (shadda doubling and sun letter doubling are the same effect)
-                    if next_is_doubled:
-                        next_is_doubled = False
                 elif next_is_doubled:
                     # Double the sun letter (from definite article)
                     phones.append(consonant + consonant)
@@ -382,16 +402,19 @@ class LevantinePhonetiser:
                 # Check if there's a shadda after this consonant
                 has_shadda = (letter1 == u'\u0651') or (letter1 in self.diacriticsWithoutShadda and letter2 == u'\u0651')
                 if has_shadda:
+                    # Handle sun letter doubling vs shadda (or both)
                     phones.append(consonant + consonant)
-                    # Skip the shadda (and possibly the vowel before it)
-                    if letter1 == u'\u0651':
-                        skip_next = True
+                    next_is_doubled = False
+
+                    # If there's a vowel diacritic before the shadda, add it AFTER the doubled consonant
+                    if letter1 in self.vowelMap and letter2 == u'\u0651':
+                        phones.append(self.vowelMap[letter1][vowel_choice])
+                        skip_next2 = True  # Skip both the vowel and shadda
+                    elif letter1 == u'\u0651':
+                        skip_next = True  # Just skip the shadda
                     else:
                         skip_next = True
                         skip_next2 = True  # Will skip two characters
-                    # Reset next_is_doubled flag (shadda doubling and sun letter doubling are the same effect)
-                    if next_is_doubled:
-                        next_is_doubled = False
                 elif next_is_doubled:
                     # Double the sun letter (from definite article)
                     phones.append(consonant + consonant)
@@ -420,8 +443,15 @@ class LevantinePhonetiser:
                 # Skip initial alif with short vowel - already handled earlier
                 if letter_2 == 'x' and letter1 in [u'\u064e', u'\u064f', u'\u0650']:
                     continue
-                # If preceded by a vowel diacritic, it's part of diphthong or just alif
-                elif letter_1 in self.vowelMap or letter_1 in [u'\u064e', u'\u064f', u'\u0650']:
+                # If preceded by a short vowel diacritic (fatha, damma, kasra),
+                # the diacritic + alif forms a long vowel
+                elif letter_1 in [u'\u064e', u'\u064f', u'\u0650']:
+                    # Remove the short vowel from phones (it will be replaced by long vowel)
+                    if phones and phones[-1] in self.vowelMap.get(letter_1, ['', '']):
+                        phones.pop()
+                    phones.append(self.vowelMap[u'\u0627'][vowel_choice][0])
+                # If preceded by a vowel (from vowelMap), it's part of diphthong or just alif
+                elif letter_1 in self.vowelMap:
                     phones.append(self.vowelMap[u'\u0627'][vowel_choice][0])
                 else:
                     phones.append(self.vowelMap[u'\u0627'][vowel_choice][0])
